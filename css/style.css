@@ -1,0 +1,208 @@
+/* Цвет оглавлений текста #212121 */
+/* Цвет основного текста #757575 */
+/* акцент #2196F3 */
+/* белый #FFFFFF */
+/* вторичный для подвала rgba(255, 255, 255, 0.6); */
+/* цвет body фона #e5e5e5 */
+/* цвет фона команды #f5f4fa */
+/* цвет фона героя  #2F303A; */
+:root {
+  --main-text-color: #212121;
+  --title-text-color: #757575;
+  --accent-text: #2196f3;
+  --white: #ffffff;
+  --background-body-section: #e5e5e5;
+  --background-team-section: #f5f4fa;
+  --background-hero-section: #2f303a;
+  --footer-link-color: rgba(255, 255, 255, 0.6);
+}
+/* общие */
+body {
+  background-color: var(--background-features-section);
+  color: var(--main-text-color);
+
+  font-family: Roboto, sans-serif;
+  letter-spacing: 0.03em;
+}
+.list {
+  list-style: none;
+}
+.link {
+  text-decoration: none;
+}
+.section-title {
+  color: var(--main-text-color);
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+}
+/* Делаем шапку */
+.page-header {
+  background-color: var(--white);
+}
+/* название фирмы */
+.firm-name {
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  text-decoration: none;
+}
+.first-firm-name {
+  color: var(--accent-text);
+}
+.second-firm-name {
+  color: var(--main-text-color);
+}
+/* навигация сайта */
+.site-nav .link {
+  color: var(--main-text-color);
+}
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--accent-text);
+}
+.contact {
+  color: var(--title-text-color);
+}
+.contact:hover,
+.contact:focus {
+  color: var(--accent-text);
+}
+
+.site-nav.list,
+.contact.link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+/* делаем блок герой */
+.hero {
+  background-color: var(--background-hero-section);
+}
+.hero-title {
+  color: var(--white);
+
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.4;
+  text-align: center;
+  letter-spacing: 0.06em;
+}
+.hero-button {
+  color: var(--white);
+  background-color: var(--accent-text);
+
+  font-family: Roboto, sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+}
+/* блок особеностей */
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.features .title {
+  color: var(--main-text-color);
+}
+
+.title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+}
+
+.text {
+  color: var(--title-text-color);
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+/* чем мы занимаемся, нечего размечать, все в других блоках, Наша команда*/
+
+/* наша команда */
+.section.team {
+  background-color: var(--background-team-section);
+}
+.staff-name {
+  color: var(--main-text-color);
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+}
+.specialty {
+  color: var(--title-text-color);
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.19;
+}
+/* подвал */
+.page-footer {
+  background-color: var(--background-hero-section);
+}
+.third-firm-name {
+  color: #ffffff;
+}
+.address {
+  color: var(--white);
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+}
+.page-footer .link {
+  color: var(--footer-link-color);
+}
+
+/* Страница Портфолио */
+.radio-button {
+  color: var(--main-text-color);
+  background-color: var(--background-team-section);
+
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+  letter-spacing: 0.03em;
+}
+.radio-button:hover,
+.radio-button:focus {
+  color: var(--white);
+  background-color: var(--accent-text);
+}
+.image-name {
+  color: var(--main-text-color);
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.project-type {
+  color: var(--title-text-color);
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.88;
+}
