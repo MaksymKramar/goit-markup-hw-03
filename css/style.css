@@ -80,7 +80,15 @@ body {
 }
 
 /* навигация сайта */
+.site-nav.list {
+  display: flex;
+}
+
 .site-nav .link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   color: var(--main-text-color);
 }
 .site-nav .link:hover,
@@ -89,6 +97,10 @@ body {
 }
 .contact {
   color: var(--title-text-color);
+}
+
+.site-nav .item:not(:last-child) {
+  margin-right: 50px;
 }
 
 .contact:hover,
